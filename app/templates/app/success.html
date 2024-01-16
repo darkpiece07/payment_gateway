@@ -1,0 +1,18 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+
+{% block title %} Successful{% endblock title %}
+
+{% block content %}
+    <div class="text-center">
+        <img width="300" height="300" src="{% static "app/success_icon.jpg" %}" alt="">
+    </div>
+    <div class="my-3 mx-3" style="text-align: center;">
+        <h1 class="my-3 mx-3">Payment Successful</h1>
+        <a style="text-align: center;" class="btn btn-success" href="http://localhost:8000/payment/" type="button">Pay Again</a>
+    </div>
+
+    
+{% endblock content %}
+
